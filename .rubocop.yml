@@ -1,0 +1,21 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - "db/schema.rb"
+    - "Gemfile"
+    - "lib/tasks/*.rake"
+    - "bin/*"
+    - "db/migrate/*"
+    - "config/puma.rb"
+    - "config/spring.rb"
+    - "config/environments/development.rb"
+    - "config/environments/production.rb"
+    - "config/routes.rb"
+    - "test/test_helper.rb"
+  
+Style/Documentation:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 18
+Metrics/BlockLength:
+  Max: 51
