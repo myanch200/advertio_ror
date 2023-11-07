@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable, :trackable
 
-  normalize :phone_number, with: :phone_number_normalizer
+  normalizes :phone_number, with: :phone_number_normalizer
 
   validates :first_name, :last_name, :phone_country_code, :phone_number, presence: true
   validate :validate_phone_number
